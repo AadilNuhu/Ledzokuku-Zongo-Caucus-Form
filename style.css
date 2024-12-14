@@ -7,13 +7,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 10px 0;
   min-height: 100vh;
   text-align: center;
 }
 
 html,body{
   overflow-x: hidden;
+}
+
+span{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
+}
+
+span p{
+  margin: 0;
+  font-size: 30px;
+}
+span input{
+  margin: 0;
+  border-radius: 20px;
+  height: 20px;
 }
 /* Form Container */
 form {
@@ -59,7 +76,6 @@ h1 {
 
 /* Input Fields */
 input[type="text"], 
-input[type="date"], 
 input[type="number"], 
 input[type="email"], 
 select {
@@ -75,8 +91,18 @@ select {
   transition: all 0.3s ease-in-out;
 }
 
+input[type="date"]{
+  width: 40%;
+  padding: 10px;
+}
+
 input::placeholder {
   color: red;
+}
+
+span p{
+  margin: 0;
+  font-size: 17px;
 }
 
 input:focus, 
@@ -127,12 +153,16 @@ button[type="submit"]:hover {
   }
 
   input[type="text"], 
-  input[type="date"], 
   input[type="number"], 
   input[type="email"], 
   select {
     width: 90%;
     font-size: 12px;
+  }
+
+  input[type="date"]{
+    width: 30%;
+    padding: 10px;
   }
 
   button[type="submit"] {
