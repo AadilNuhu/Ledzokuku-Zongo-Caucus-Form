@@ -12,6 +12,9 @@ body {
   text-align: center;
 }
 
+html,body{
+  overflow-x: hidden;
+}
 /* Form Container */
 form {
   /* background: #b9feb9;  */
