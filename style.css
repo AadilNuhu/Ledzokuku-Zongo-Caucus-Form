@@ -128,7 +128,7 @@ button[type="submit"]:hover {
   input[type="number"], 
   input[type="email"], 
   select {
-    width: 100%;
+    width: 90%;
     font-size: 12px;
   }
 
